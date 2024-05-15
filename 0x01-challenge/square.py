@@ -3,11 +3,10 @@
 
 
 class square():
-    """ square class """    
+    """ square class """
     width = 0
     height = 0
 
-    
     def __init__(self, *args, **kwargs):
         """ init for square class """
         for key, value in kwargs.items():
@@ -18,12 +17,13 @@ class square():
         return self.width * self.width
 
     def PermiterOfMySquare(self):
-       """ perimiter of the square """
+        """ perimiter of the square """
         return (self.width * 2) + (self.height * 2)
 
     def __str__(self):
         """ str representation of square """
         return "{}/{}".format(self.width, self.height)
+
 
 if __name__ == "__main__":
     """ square instance """
